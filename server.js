@@ -5,10 +5,13 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articleOne = { title: "Article One| Vinitha I V"
+                    heading: ""
 app.get('/article-one', function (req, res) {
     res.sendFile((path.join(__dirname, 'ui', 'article-one.html')));
 });
