@@ -27,16 +27,17 @@ var articleOne = {
 
 function createTemplate (data) {
     
-  var title= data.title;
-  var date= data.date;
-  var heading= data.heading;
-  var content= data.content;
+  var title = data.title;
+  var date = data.date;
+  var heading = data.heading;
+  var content = data.content;
 
-var htmlTemplate =
+var htmlTemplate = 
+  
    <html>
      <head>
         <title>
-           ${title}
+           $(title)
         </title>
         <link href="ui/style.css" rel="stylesheet"/>
     </head>
@@ -60,6 +61,7 @@ var htmlTemplate =
     
     </body>
     </html>
+    ;
 
 return htmlTemplate;
 
