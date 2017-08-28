@@ -8,8 +8,8 @@ app.use(morgan('combined'));
 
 
 
-var articles{
-    articleOne = { 
+var articles {
+    articleOne: { 
     title: 'Article One| Vinitha I V',
     heading:'Article One',
     date: 'Aug 21 2017' ,
@@ -26,7 +26,7 @@ var articles{
            
 },
 
-articleTwo = { 
+articleTwo : { 
     title: 'Article Two| Vinitha I V',
     heading:'Article Two',
     date: 'Aug 22 2017' ,
@@ -42,7 +42,7 @@ articleTwo = {
            </p>`
            
 },
-articleOne = { 
+articleThree : { 
     title: 'Article Three| Vinitha I V',
     heading:'Article Three',
     date: 'Aug 23 2017' ,
@@ -57,9 +57,9 @@ articleOne = {
        This is the cnten of my article one article oneThis is the cnten of my article one article oneThis is the cnten of my article one article one
            </p>`
            
-};
-
 }
+
+};
 
 function createTemplate (data) {
     
