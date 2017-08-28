@@ -9,8 +9,8 @@ app.use(morgan('combined'));
 
 
 var articleOne = { 
-    title: "Article One| Vinitha I V",
-    heading:'Aricle One',
+    title: 'Article One| Vinitha I V',
+    heading:'Article One',
     date: 'Sep 5 2016' ,
     content:
           `<p>This is the cnten of my article one article oneThis is the cnten of my article one article oneThis is the cnten of my article one article one
@@ -25,7 +25,7 @@ var articleOne = {
            
 };
 
-function createTemplate(data){
+function createTemplate (data) {
     
   var title= data.title;
   var date= data.date;
@@ -33,8 +33,8 @@ function createTemplate(data){
   var content= data.content;
 
 var htmlTemplate =
-    <html>
-    <head>
+   <html>
+     <head>
         <title>
            ${title}
         </title>
@@ -60,8 +60,9 @@ var htmlTemplate =
     
     </body>
     </html>
-;
-    return htmlTemplate;
+
+return htmlTemplate;
+
 }
     
     
@@ -72,7 +73,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/article-one', function (req, res) {
-    res.send(createTenplate(articleOne));
+    res.send(createTemplate(articleOne));
 });
 app.get('/article-two',function(req, res) {
     res.sendFile((path.join(__dirname, 'ui', 'article-two.html')));
