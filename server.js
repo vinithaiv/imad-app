@@ -14,10 +14,19 @@ var articleOne = {
     title: "Article One| Vinitha I V",
     heading:'Aricle One',
     date: 'Sep 5 2016' ,
-    content: 
+    content:
+          `<p>This is the cnten of my article one article oneThis is the cnten of my article one article oneThis is the cnten of my article one article one
+           </p>
+           
+           <p>This is the cnten of my article one article oneThis is the cnten of my article one article oneThis is the cnten of my article one article one
+           </p>
+           
+           <p>
+       This is the cnten of my article one article oneThis is the cnten of my article one article oneThis is the cnten of my article one article one
+           </p>`
+           
+};
     
-
-                    heading: ""
 app.get('/article-one', function (req, res) {
     res.sendFile((path.join(__dirname, 'ui', 'article-one.html')));
 });
