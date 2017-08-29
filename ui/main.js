@@ -3,3 +3,9 @@ console.log('Loaded!');
 
 var element=document.getElementById('main-text');
 element.innerHTML="Changed maintext";
+  
+ //Move element
+ var img=document.getElementById('madi');
+ img.onclick=function() {
+     image.stylr.marginleft= "100px";
+ }
