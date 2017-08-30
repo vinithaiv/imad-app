@@ -24,11 +24,10 @@ element.innerHTML="Changed maintext";
  var counter=0;
  button.onclick=function () {
      counter = counter+1;
-     var span=document.getElementById('count');
-     span.innerHTML=counter.toString();
+     
      
      //Create a request object
-    /* var request=XMLHttpRequest();
+    var request=XMLHttpRequest();
      
      
      //Capture the response and store in a variable
@@ -48,6 +47,6 @@ element.innerHTML="Changed maintext";
      //Make the request
      request.open('GET','http://vinithaiv.imad.hasura-app.io/',true);
      request.send(null);
-    */
+    
      
  };
