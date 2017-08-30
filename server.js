@@ -133,10 +133,10 @@ app.get('/ui/madi.png', function (req, res) {
 
 
  var names=[];
- app.get('/submit-name/:name',function(req,res){
+ app.get('/submit-name/:name',function(req,res) { //URL: /submit-name?name-xxxx
      //get name from request
      
-     var name = req.params.name;
+     var name = req.query.name;
      //JSON Javascript object notification
      names.push(name);
      res.send(JSON.stringify(names));
