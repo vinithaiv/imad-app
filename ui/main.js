@@ -49,3 +49,14 @@ element.innerHTML="Changed maintext";
     
      
  };
+ 
+ 
+ //Submit name
+ var nameInput = document.getElementById('name');
+ var name = nameInput.value;
+ var submit = document.getElementById('submit_btn');
+ submit.onclick = function(){
+     
+     
+     //capture a list of names and render it as list
+ }
