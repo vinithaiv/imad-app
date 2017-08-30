@@ -1,7 +1,7 @@
 console.log('Loaded!');
 // change element of main text
 
-var element=document.getElementById('main-text');
+/*var element=document.getElementById('main-text');
 element.innerHTML="Changed maintext";
   
  //Move element
@@ -16,4 +16,35 @@ element.innerHTML="Changed maintext";
  
  img.onclick = function() {
      var interval=setInterval(moveRight,50);
- };
+ };*/
+ 
+ 
+ 
+ var button=document.getElementById('counter');
+ button.onclick=function(){
+     
+     
+     //Create a request object
+     var request=XMLHttpRequest();
+     
+     
+     //Capture the response and store in a variable
+     request.onreadystatechange = function(){
+         if(request.readyState===XMLXMLHttpRequest.DONE){
+            
+             //take some action
+             if(request.status===200){
+                 var counter = request.responseText;
+                 var span=document.getElementById('count');
+     span.innerHTML=counter.toString();
+                 
+             }
+         }
+     }
+     
+     //Make the request
+     request.open('GET','http://vinithaiv.imad.hasura-app.io/',true);
+     request.send(null);
+    
+     
+ }
