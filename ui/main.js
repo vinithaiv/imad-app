@@ -31,7 +31,7 @@ element.innerHTML="Changed maintext";
      
      //Capture the response and store in a variable
      request.onreadystatechange = function(){
-         if(request.readyState=== XMLXMLHttpRequest.DONE) {
+         if(request.readyState=== XMLHttpRequest.DONE) {
             
              //take some action
              if(request.status === 200) {
