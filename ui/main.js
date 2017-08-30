@@ -23,7 +23,6 @@ element.innerHTML="Changed maintext";
  var button=document.getElementById('counter');
  var counter=0;
  button.onclick=function () {
-     counter = counter+1;
      
      
      //Create a request object
@@ -32,17 +31,17 @@ element.innerHTML="Changed maintext";
      
      //Capture the response and store in a variable
      request.onreadystatechange = function(){
-         if(request.readyState===XMLXMLHttpRequest.DONE){
+         if(request.readyState=== XMLXMLHttpRequest.DONE) {
             
              //take some action
-             if(request.status===200){
+             if(request.status === 200) {
                  var counter = request.responseText;
                  var span=document.getElementById('count');
-     span.innerHTML=counter.toString();
+     span.innerHTML = counter.toString();
                  
              }
          }
-     }
+     };
      
      //Make the request
      request.open('GET','http://vinithaiv.imad.hasura-app.io/',true);
