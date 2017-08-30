@@ -47,4 +47,4 @@ element.innerHTML="Changed maintext";
      request.send(null);
     
      
- }
+ };
